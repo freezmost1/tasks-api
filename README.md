@@ -57,4 +57,8 @@ REST API для управления списком задач (in‑memory). Л
 5. Удалить задачу
    ```bash
    curl -X DELETE http://localhost:8080/tasks/1
+6. Health check
+   ```bash
+   curl -X GET http://localhost:8080/health
+
 
