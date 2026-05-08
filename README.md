@@ -47,7 +47,7 @@ REST API для управления списком задач (in‑memory). Л
    curl -X GET http://localhost:8080/tasks
 2. Создать задачу
     ```bash
-    curl -X POST http://localhost:8080/tasks
+    curl -X POST http://localhost:8080/tasks \
 3. Получить задачу по ID
    ```bash
    curl -X GET http://localhost:8080/tasks/1
