@@ -32,11 +32,12 @@ REST API для управления списком задач (in‑memory). Л
    ```bash
    go run cmd/server/main.go
 ## Эндпоинты API
-```
-Метод	Путь	Описание	Обязательные поля	Успешный статус
-GET	/tasks	Получить список всех задач	—	200 OK
-POST	/tasks	Создать новую задачу	title	201 Created
-GET	/tasks/{id}	Получить задачу по ID	—	200 OK
-PUT	/tasks/{id}	Обновить задачу целиком	title	200 OK
-DELETE	/tasks/{id}	Удалить задачу	—	204 No Content
-GET	/health	Health check сервиса	—	200 OK
+| Метод | Путь | Описание | Обязательные поля | Успешный статус |
+|-------|------|----------|------------------|---------------|
+| GET | `/tasks` | Получить список всех задач | — | 200 OK |
+| POST | `/tasks` | Создать новую задачу | `title` | 201 Created |
+| GET | `/tasks/{id}` | Получить задачу по ID | — | 200 OK |
+| PUT | `/tasks/{id}` | Обновить задачу целиком | `title` | 200 OK |
+| DELETE | `/tasks/{id}` | Удалить задачу | — | 204 No Content |
+| GET | `/health` | Health check сервиса | — | 200 OK |
+
