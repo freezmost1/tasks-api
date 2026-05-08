@@ -6,14 +6,16 @@
 ## Структура проекта
 
 После реализации проект будет иметь следующую структуру:
-tasks-api/
-├── cmd/server/main.go
-├── internal/handlers/tasks.go
-├── internal/models/task.go
-├── internal/storage/memory.go
-├── internal/storage/storage.go
-├── go.mod
-└── README.md
+   ```
+   tasks-api/
+   ├── cmd/server/main.go
+   ├── internal/handlers/tasks.go
+   ├── internal/models/task.go
+   ├── internal/storage/memory.go
+   ├── internal/storage/storage.go
+   ├── go.mod
+   └── README.md
+   ```
 
 REST API для управления списком задач (in‑memory). Лёгкий сервис для тестирования и прототипирования без необходимости настройки базы данных.
 
