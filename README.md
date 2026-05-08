@@ -41,3 +41,20 @@ REST API для управления списком задач (in‑memory). Л
 | DELETE | `/tasks/{id}` | Удалить задачу | — | 204 No Content |
 | GET | `/health` | Health check сервиса | — | 200 OK |
 
+## Примеры curl
+1. Получить все задачи
+   ```bash
+   curl -X GET http://localhost:8080/tasks
+2. Создать задачу
+    ```bash
+    curl -X POST http://localhost:8080/tasks
+3. Получить задачу по ID
+   ```bash
+   curl -X GET http://localhost:8080/tasks/1
+4. Обновить задачу
+   ```bash
+   curl -X PUT http://localhost:8080/tasks/1 \
+5. Удалить задачу
+   ```bash
+   curl -X DELETE http://localhost:8080/tasks/1
+
