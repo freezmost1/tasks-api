@@ -31,3 +31,11 @@ REST API для управления списком задач (in‑memory). Л
 3. Запустите сервер:
    ```bash
    go run cmd/server/main.go
+## Эндпоинты API
+Метод	Путь	           Описание
+GET	/tasks	        Получить список всех задач
+POST	/tasks	        Создать новую задачу
+GET	/tasks/{id}      Получить задачу по ID
+PUT	/tasks/{id}	     Обновить задачу целиком
+DELETE/tasks/{id}	     Удалить задачу
+GET	/health	        Health check
